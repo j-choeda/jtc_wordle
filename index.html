@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wordle</title>
+  <link rel="stylesheet" href="game.css" />
+</head>
+<body>
+  <h1>Wordle | Guess The Word!!</h1>
+
+  <div id="stats">
+    <p>Games Played: <span id="gamesPlayed">0</span></p>
+    <p>Wins: <span id="wins">0</span></p>
+    <p>Current Streak: <span id="streak">0</span></p>
+    <p>Best Streak: <span id="bestStreak">0</span></p>
+  </div>
+
+  <button id="newWordBtn">🔁 New Word</button>
+
+  <div id="legend">
+    <h3>Legend</h3>
+    <p>🟩 <strong>Green:</strong> Letter in the correct spot</p>
+    <p>🟨 <strong>Yellow:</strong> Letter in the word but wrong spot</p>
+    <p>⬛ <strong>Black:</strong> Letter not in the word</p>
+  </div>
+
+  <div id="game-board"></div>
+  <div id="keyboard"></div>
+
+  <script src="words.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>

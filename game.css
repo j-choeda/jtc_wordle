@@ -1,0 +1,151 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f8f3; /* light eggshell background */
+  color: #222; /* dark text for contrast */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin-top: 20px;
+  font-size: 2rem;
+  color: #333; /* slightly darker title text */
+}
+
+#stats {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #555; /* muted gray text */
+}
+
+#newWordBtn {
+  margin-top: 15px;
+  background-color: #6aaa64; /* soft green */
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+#newWordBtn:hover {
+  background-color: #85c179; /* lighter green on hover */
+}
+
+#legend {
+  margin-top: 20px;
+  background-color: #fffef9; /* soft white box */
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  text-align: left;
+  width: 250px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1); /* subtle shadow */
+  border: 1px solid #e0e0e0; /* light border */
+}
+
+#legend h3 {
+  margin-top: 0;
+  color: #333;
+  text-align: center;
+}
+
+#game-board {
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+  gap: 5px;
+  margin-top: 30px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 5px;
+}
+
+.tile {
+  width: 60px;
+  height: 60px;
+  border: 2px solid #cfcfcf;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff; /* white tile background */
+  color: #222;
+  box-shadow: 0 2px 3px rgba(0,0,0,0.05);
+}
+
+.correct {
+  background-color: #6aaa64; /* green */
+  border-color: #6aaa64;
+  color: white;
+}
+
+.present {
+  background-color: #c9b458; /* yellow */
+  border-color: #c9b458;
+  color: white;
+}
+
+.absent {
+  background-color: #787c7e; /* gray */
+  border-color: #787c7e;
+  color: white;
+}
+
+#keyboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.keyboard-row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+
+.key {
+  background-color: #e4e4e4;
+  border: none;
+  border-radius: 5px;
+  color: #222;
+  margin: 2px;
+  padding: 10px 12px;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.key.wide {
+  padding: 10px 20px;
+}
+
+.key.white {
+  background-color: #f5f5f5;
+  color: #222;
+}
+
+.key.green {
+  background-color: #6aaa64;
+  color: white;
+}
+
+.key.yellow {
+  background-color: #c9b458;
+  color: white;
+}
+
+.key.gray {
+  background-color: #787c7e;
+  color: white;
+}
